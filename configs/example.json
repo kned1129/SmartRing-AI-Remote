@@ -1,0 +1,60 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "token": "REPLACE_WITH_RANDOM_64_HEX",
+  "max_seconds": 300,
+  "adapters": {
+    "codex": {
+      "processes": [
+        "codex.exe",
+        "ChatGPT.exe"
+      ],
+      "window_title_regex": "(?i)(codex|chatgpt)",
+      "input_name_regex": "(?:和 Codex 一起工作|Work with Codex)",
+      "automation_id": null,
+      "session_label": ""
+    },
+    "chatgpt": {
+      "processes": [
+        "ChatGPT Classic.exe"
+      ],
+      "window_title_regex": "^ChatGPT Classic$",
+      "input_name_regex": "询问 ChatGPT",
+      "automation_id": null,
+      "session_label": "",
+      "restore_existing_hidden": true
+    },
+    "grokbot": {
+      "processes": [
+        "Grok Bot.exe"
+      ],
+      "window_title_regex": "^Grok Bot$",
+      "input_name_regex": "提示词",
+      "automation_id": null,
+      "session_label": "",
+      "session_heading_id": "sand-conversation-heading"
+    }
+  },
+  "virtual_audio": {
+    "enabled": false,
+    "device": "CABLE Input (VB-Audio Virtual Cable)",
+    "host_api": "Windows WASAPI"
+  },
+  "typeless": {
+    "hotkey": "rightalt",
+    "automatic_trigger": false,
+    "lifecycle_verified": false,
+    "interaction": "toggle",
+    "cancel_verified": false
+  },
+  "default_mode": "global",
+  "strict_ai_sessions": true,
+  "enter_combo": "enter",
+  "local_microphone": {
+    "enabled": false,
+    "device_regex": "Realtek"
+  },
+  "sessions": {
+    "enabled": true
+  }
+}

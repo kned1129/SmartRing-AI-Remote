@@ -1,0 +1,1 @@
+Project-authored code: MIT. Generated Chinese font and NotoCJK-LICENSE.txt: SIL Open Font License 1.1. External BSP/LVGL/ESP-IDF dependencies are resolved separately by the component manager; retain their own licenses. Typeless and VB-CABLE are third-party products, not included or relicensed by this repository.

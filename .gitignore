@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+configs/local.json
+firmware/main/local_config.h
+recordings/
+logs/
+backups/
+firmware/build/
+firmware/sdkconfig
+drafts/
+firmware/managed_components/
+downloads/
+artifacts/firmware/
+
+# Local diagnostics can contain conversation titles, audio fixtures and identifiers.
+artifacts/
+*.wav
+*.bin
+*.elf
